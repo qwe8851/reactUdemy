@@ -2,7 +2,7 @@ import React from 'react';
 
 import Expenses from './components/Expenses/Expenses';
 
-function App() {
+const App = () => {
   const expenses = [
     {
       id: 'e1',
@@ -29,11 +29,11 @@ function App() {
   // React.createElement('h2', {}, "Let's get started!"),
   // React.createElement(Expenses, {items: expenses})
   // );   리엑트는 이런식으로 변환되기 때문에 wrap이 필요하고, React를 import해주는 것이 좋다.
-  
+
   return (
     <div>
       <h2>Let's get started!</h2>
-      <Expenses items={expenses}/>
+      <Expenses items={expenses} />
     </div>
   );
 }
